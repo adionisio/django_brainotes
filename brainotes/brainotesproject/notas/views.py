@@ -20,7 +20,7 @@ from notas.serializers import NotaSerializer,UsuarioSerializer
 @api_view(['GET', 'POST'])
 def notas_list(request, format=None):
     """
-    List all code snippets, or create a new snippet.
+    List all notas, or create a new nota.
     """
     if request.method == 'GET':
         notas = Nota.objects.all()
